@@ -7,7 +7,9 @@ package car;
 /**
  *
  * @author Artem
+ * Прочитать про наследование методов(), абстракный класс.
  */
+
 public class Test {
     public static void main(String []args){
         Engine e= new Engine();
@@ -27,6 +29,7 @@ public class Test {
         System.out.println("Проверка температуры "+e.getTemp()); 
         System.out.println("Проверка оборотов "+e.getRev());
     }
+    
     
     
    static void pause(double a){
