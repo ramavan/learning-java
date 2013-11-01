@@ -33,7 +33,12 @@ class Computer {
     
     static double mean(double[] vs) {
         ///.......
-        return 0;
+        double f=0;
+        for (int i = 0; i < vs.length; i++) {
+            f+=vs[i]; 
+        }
+       // System.out.println((int)f/vs.length);печать для проверки
+        return f/vs.length;
     }
 }
 
@@ -59,6 +64,6 @@ public class Lesson1 {
         c2.test();
         Computer.test2();
         
-        System.out.println(3 == Computer.mean(new double[] {1,2,3,4,5}));
+        System.out.println(0.0 == Computer.mean(new double[] {}));
     }
 }
